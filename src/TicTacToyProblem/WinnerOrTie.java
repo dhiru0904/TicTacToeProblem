@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class WinnerOrTie {
     public WinnerOrTie() {
-        System.out.println("Welcome to Tic Tac Toe Game !!!");
+        System.out.println("Welcome to Tic Tac Toe Game .......**");
     }
 
     //Declaring variables
