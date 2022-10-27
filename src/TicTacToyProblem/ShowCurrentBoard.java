@@ -2,9 +2,9 @@ package TicTacToyProblem;
 
 import java.util.Scanner;
 
-public class ChooseLetter {
-    public ChooseLetter() {
-        System.out.println("Welcome to Tic Tac Toe Game.....**");
+public class ShowCurrentBoard {
+    public ShowCurrentBoard() {
+        System.out.println("Welcome to Tic Tac Toe Game ....**");
     }
 
     static char[] board = new char[10];
@@ -14,23 +14,24 @@ public class ChooseLetter {
     public static void main(String[] args) {
 
         //Initialize the object
-        ChooseLetter d = new ChooseLetter();
+        ShowCurrentBoard d = new ShowCurrentBoard();
 
-        //Creating the board
-        System.out.println(board[1] + " | " + board[2] + " | " + board[3]);
-        System.out.println("---------");
-        System.out.println(board[4] + " | " + board[5] + " | " + board[6]);
-        System.out.println("---------");
-        System.out.println(board[7] + " | " + board[8] + " | " + board[9]);
+        //Initialize board
+        d.initialize();
 
         //Checking for player choice
         chooseOption();
 
+        //Showing board
+        showBoard();
+
     }
 
     //Initialization of game
-    public static void initialize() {
-        for (int i = 1; i < 10; i++) {
+    public void initialize()
+    {
+        for (int i = 1; i < 10; i++)
+        {
             board[i] = ' ';
         }
     }
@@ -50,7 +51,16 @@ public class ChooseLetter {
             player = 'O';
             Remote = 'X';
         }
-        System.out.println("Player choose option : "+player);
+        System.out.println("Player choosing option : "+player);
     }
 
+    //To see board
+    public static void showBoard()
+    {
+        System.out.println(board[1] + " | " + board[2] + " | " + board[3]);
+        System.out.println("---------");
+        System.out.println(board[4] + " | " + board[5] + " | " + board[6]);
+        System.out.println("---------");
+        System.out.println(board[7] + " | " + board[8] + " | " + board[9]);
+    }
 }
