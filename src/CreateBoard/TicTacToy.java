@@ -21,7 +21,7 @@ public class TicTacToy {
         public static void main(String[] args) {
 
             //Initialize the object
-            TicTacToy obj = new TicTacToy();
+            TicTacToy d = new TicTacToy();
 
             //Creating the board
             System.out.println(board[1] + " | " + board[2] + " | " + board[3]);
